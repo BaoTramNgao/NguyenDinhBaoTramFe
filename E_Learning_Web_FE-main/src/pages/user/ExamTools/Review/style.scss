@@ -1,0 +1,13 @@
+@use "sass:map";
+@import "style/pages/all";
+.see_More{
+    h5{
+        text-align: center;
+        color: map-get($theme-colors ,"head_bt_bg_sub_text"  );
+        font-size: 14px;
+    }
+    h5:hover{
+        text-decoration: underline;
+    }
+}
+

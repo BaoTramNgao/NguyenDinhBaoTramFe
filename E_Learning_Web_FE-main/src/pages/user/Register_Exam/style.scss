@@ -1,0 +1,128 @@
+@use "sass:map";
+@import "style/pages/all";
+
+.Regis_Ex{
+    padding-bottom: 100px;
+ h1{
+    color: map.get($theme-colors , "head_bt_bg_sub_text" );
+    padding: 40px 0px 40px;
+  
+ }
+
+}
+.Regis_Ex-menu{
+    
+    border-bottom: 2px solid #34393b;
+    width: 100%;
+    display: flex;
+    
+    
+        
+    span{
+ 
+        a{
+            text-decoration: none;
+            color: map.get($theme-colors , "head_bt_bg_text" );
+        }
+        margin: 0px 1px;
+        font-size: 22px;
+
+        font-weight: 700;
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px 20px;
+        background-color:  #3e4446;
+        
+   
+    }
+    .Review_active{
+        background-color: #093e71;
+    }
+    span:hover{
+        background-color: #093e71;
+    }
+
+  
+
+}
+.Regis_Ex-ListItem{
+    padding: 30px 0px 10px;
+}
+
+.Regis_Ex-List{
+    padding-bottom: 20px;
+h3{
+padding: 15px 0;
+
+}
+ul{
+display:flex;
+list-style: none;
+flex-wrap: wrap;
+
+
+    li{
+        padding-bottom: 30px;
+       padding-left: 15px;
+        padding-right: 15px;
+        flex-basis: 25%;
+        box-sizing: border-box;
+    }
+}
+}
+.Regis_Ex-List_card{
+    max-width: 250px;
+    border: 1px solid whitesmoke;
+    border-radius: 12px 12px 0 0;
+    display: flex; 
+    flex-direction: column; // Sắp xếp theo chiều dọc
+    align-items: center; // Căn giữa theo chiều ngang
+    img{
+        width: 100%;
+    }
+    .Regis_Ex-List_card_item{
+     display: flex;
+     flex-direction: column;
+     align-items: center; // Căn giữa theo chiều ngang
+        text-align: center; // Căn giữa nội dung văn bản
+h5{
+    margin: 10px 0 30px;
+    color: map.get($theme-colors, "head_bt_bg_sub_text" );
+    font-size: 15px;
+  
+}
+.Regis_Ex-List_card_item-bttn-card{
+    padding: 7px;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 10px; 
+    background-color:#093e71;
+    color: map.get($theme-colors , "head_bt_bg_text" );
+}
+.Rating{
+    span{
+        color: #fccc21;
+    }
+    align-self: flex-start; //căn trái
+    margin-bottom: 15px;
+   
+}
+.monney_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .monney_left{
+        text-decoration: line-through;
+        font-size: 15px;
+     
+    }
+    .monney_right{
+        font-weight: bold;
+        font-size: 20px;
+        color: map.get($theme-colors, "head_bt_bg_sub_text" );
+    }
+}
+    
+    }
+
+}

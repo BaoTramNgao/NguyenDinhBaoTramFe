@@ -1,0 +1,101 @@
+
+
+@use "sass:map";
+
+@import '~bootstrap/scss/bootstrap';
+@import "theme";
+@import "reponsive";
+
+html,
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+  
+
+
+.container_sub{
+    cursor: pointer;
+    max-width: 1250px;
+
+    margin: auto;
+   
+}
+.container-big{
+   
+    width: 100%;
+   
+
+    margin: auto;
+}
+.row-html{
+    display: flex;
+    flex-wrap: wrap; //Chiem tren 1 dong full moi xuong dong
+}
+.col-6-html{
+    flex: 0 0 50%;
+    max-width: 50%;
+   
+}
+.col-lg-3-html{
+    flex: 0 0 25%;
+    max-width: 25%;
+   
+}
+.col-lg-6-html{
+    flex: 0 0 50%;
+    max-width: 50%;
+   
+}
+
+@include Reponsive($SMALL_DEVICE){
+    .col-xs-12-html {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+// @include Reponsive($WIDE_MOBILE){
+//     .col-sm-6 {
+//         flex: 0 0 50%;
+//         max-width: 50%;
+//     }
+//     .col-sm-12 {
+//         flex: 0 0 100%;
+//         max-width: 100%;
+//     }
+// }
+@include Reponsive($desktop){
+    .col-xl-3-html{
+        flex: 0 0 25%;
+        max-width: 25%;
+      
+    }
+    .col-xl-6-html{
+        flex: 0 0 50%;
+        max-width: 50%;
+      
+    }
+}
+@include Reponsive($TABLET_DEVICE){
+    .col-md-6-html{
+        flex: 0 0 50%;
+        max-width: 50%;
+      
+    }
+    .col-md-12-html{
+        flex: 0 0 100%;
+        max-width: 100%;
+      
+    }
+}
+
+@include Reponsive($MEDIUM_DEVICE){
+    .col-lg-3-html{
+        flex: 0 0 25%;
+        max-width: 25%;
+      
+    }
+}
